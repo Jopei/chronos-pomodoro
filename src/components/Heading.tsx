@@ -1,5 +1,6 @@
-export function Heading() {
+import styles from './Heading.module.css';
+export function Heading(props) {
     return (
-        <h1 className="heading"> Olá Chronos! (Do Heading.tsx) </h1>
+        <h1 className={styles.heading}> {props.children} </h1>
     );
 }
