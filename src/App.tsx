@@ -1,17 +1,27 @@
-import { Heading } from "./components/Heading";
+
 import "./styles/theme.css"
 import "./styles/global.css"
 
-export function App(){
+import { Heading } from "./components/Heading"
+import { Container } from "./components/Container";
+import { Logo } from "./components/Logo";
+
+export function App() {
     return (
         <>
-            <Heading attr={123} attr2='vesvo'> Olá Chronos! (Do App.tsx) </Heading>
-            <p> 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto officiis in, 
-                a voluptatibus accusantium obcaecati esse exercitationem ad maiores nostrum 
-                autem sunt expedita eveniet, sapiente ullam amet tenetur facere dolorem!
-            </p>
+            <Container>
+                <Logo />
+            </Container>
+
+            <Container>
+                <Heading>
+                    MENU
+                </Heading>
+            </Container>
+
         </>
     );
 }
+
+
 
